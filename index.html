@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Font Style Generator - स्टाइलिश हिंदी फॉन्ट जनरेटर</title>
+    <meta name="description" content="Free Hindi font style generator with 50+ stylish fonts. Convert your text to beautiful Hindi fonts, download as images, and copy to use anywhere. हिंदी फॉन्ट स्टाइल जनरेटर।">
+    <meta name="keywords" content="hindi font, hindi font style, hindi text generator, stylish hindi fonts, hindi typing, देवनागरी फॉन्ट, हिंदी फॉन्ट स्टाइल, हिंदी टाइपिंग">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ankpritam.github.io/hindifontstyle.github.io/">
+    <meta property="og:title" content="Hindi Font Style Generator - स्टाइलिश हिंदी फॉन्ट जनरेटर">
+    <meta property="og:description" content="Free Hindi font style generator with 50+ stylish fonts. Convert your text to beautiful Hindi fonts, download as images, and copy to use anywhere.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ankpritam.github.io/hindifontstyle.github.io/">
+    <meta property="twitter:title" content="Hindi Font Style Generator - स्टाइलिश हिंदी फॉन्ट जनरेटर">
+    <meta property="twitter:description" content="Free Hindi font style generator with 50+ stylish fonts. Convert your text to beautiful Hindi fonts, download as images, and copy to use anywhere.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ankpritam.github.io/hindifontstyle.github.io/">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Hindi Font Style Generator",
+        "url": "https://ankpritam.github.io/hindifontstyle.github.io/",
+        "description": "Free Hindi font style generator with 50+ stylish fonts. Convert your text to beautiful Hindi fonts, download as images, and copy to use anywhere.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>हिंदी फॉन्ट स्टाइल जनरेटर</h1>
+            <p class="subtitle">टेक्स्ट को स्टाइलिश फॉन्ट में बदलें</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="input-section" aria-label="टेक्स्ट इनपुट सेक्शन">
+            <div class="input-wrapper">
+                <label for="input-text" class="visually-hidden">हिंदी टेक्स्ट यहाँ टाइप करें</label>
+                <textarea 
+                    id="input-text" 
+                    placeholder="यहाँ हिंदी में टाइप करें..."
+                    aria-label="हिंदी टेक्स्ट इनपुट"
+                    rows="4"></textarea>
+                <button class="clear-btn" aria-label="टेक्स्ट साफ करें">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="input-actions">
+                <button class="action-btn" id="paste-btn" aria-label="क्लिपबोर्ड से पेस्ट करें">
+                    <i class="fas fa-paste" aria-hidden="true"></i>
+                    पेस्ट
+                </button>
+                <button class="action-btn" id="clear-all-btn" aria-label="सारा टेक्स्ट मिटाएं">
+                    <i class="fas fa-trash" aria-hidden="true"></i>
+                    सब मिटाएं
+                </button>
+            </div>
+        </section>
+
+        <section class="font-styles" aria-label="फॉन्ट स्टाइल्स">
+            <!-- Font style containers will be added by JavaScript -->
+        </section>
+        
+        <nav class="pagination" aria-label="पेज नेविगेशन">
+            <button class="pagination-btn" id="prevPage" aria-label="पिछला पेज">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i> पिछला
+            </button>
+            <div class="page-info" aria-live="polite">
+                पेज <span id="currentPage">1</span> / <span id="totalPages">1</span>
+            </div>
+            <button class="pagination-btn" id="nextPage" aria-label="अगला पेज">
+                अगला <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </main>
+
+    <footer>
+        <p>© 2025 Hindi Font Style Generator</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
